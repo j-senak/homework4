@@ -33,7 +33,9 @@ var questions = [
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
-// timeEl.addEventListener("click", function() {
+document.querySelector(".btn-primary").addEventListener("click", function() {
+
+
 
 // set the initial timer
     var secondsLeft = 60;
@@ -59,6 +61,7 @@ function setTime() {
   setTime();
 
 // if/else statements for answers
+
 // game ends and records for score on local storage
 
-// });
+});
