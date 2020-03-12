@@ -36,3 +36,18 @@ h6 {
       margin-top: 0;
       margin-bottom: 0;
   }
+
+.answer-choice {
+    margin: auto;
+    background-color: rgba(96, 16, 154, 0.9);
+    border-color: rgba(96, 16, 154, 0.9);
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+#questions {
+    text-align: center;
+}

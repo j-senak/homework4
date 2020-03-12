@@ -16,7 +16,7 @@
     <body>
         <!-- Bootstrap Nav bar that will link to high score page -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">View Highscore</a>
+            <a class="navbar-brand" href="highscore">View Highscore</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,11 +28,25 @@
             </div>
           </nav>
           <!-- Header with a explanation and Start button below -->
-          <container>
+          <container id= startpage>
               <h1>Coding Quiz Challenge</h1>
               <h6>In this coding challenge, you will be given 60 seconds to answer the questions. For each wrong answer, you will be penalized 10 seconds. Your score will be recorded when you are finished. Good luck!</h6>
               <button type="button" class="btn btn-primary">Start Quiz</button>
         </container>
+        <div id="questionPage" style="display: none">
+          <header id="question"></header>
+          <button class="answer-choice"></button>
+          <button class="answer-choice"></button>
+          <button class="answer-choice"></button>
+          <button class="answer-choice"></button>
+        </div>
+        <div id="highscorePage" style="display: none">
+          <div class="todos">
+            <form id="todo-form" method="POST">
+              <label for="todo-text">Add a Todo:</label>
+              <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
+            </form>
+        </div>
 
         <script src="script.js"></script>
     </body>

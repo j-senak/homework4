@@ -28,12 +28,31 @@ var questions = [
     
 ]
 
+var questionIndex = 0
+var options = 0
 
 // Tie the quiz to the button
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
+
 document.querySelector(".btn-primary").addEventListener("click", function() {
+document.getElementById("startpage").style.display = "none";
+document.getElementById("questionPage").style.display = "block";
+document.getElementById("question").textContent = questions[questionIndex].question;
+
+document.querySelector(".answer-choice").addEventListener("click", function() {
+    questionIndex++
+    document.getElementById("question").textContent = questions[questionIndex].question;
+    document.getElementById("answer-choice").textContent = questions.options[0];
+    if(answer-choice !== answer) {
+        secondsLeft - 10;
+        alert("Incorrect!");
+    } else {
+        alert("Correct!")
+    }
+});
+
 
 
 
@@ -59,6 +78,9 @@ function setTime() {
   }
   
   setTime();
+
+  // Get quiz to start when button is pressed.
+
 
 // if/else statements for answers
 
