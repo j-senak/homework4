@@ -16,7 +16,7 @@
     <body>
         <!-- Bootstrap Nav bar that will link to high score page -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="highscore">View Highscore</a>
+            <a class="navbar-brand" href="highscorePage">View Highscore</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,10 +41,9 @@
           <button class="answer-choice"></button>
         </div>
         <div id="highscorePage" style="display: none">
-          <div class="todos">
-            <form id="todo-form" method="POST">
-              <label for="todo-text">Add a Todo:</label>
-              <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
+            <form id="highs-scores" method="POST">
+              <label for="submitinitials">Add your initials</label>
+              <input type="text" placeholder="Your initials" name="hstext" id="hstext" />
             </form>
         </div>
 

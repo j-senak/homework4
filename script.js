@@ -41,18 +41,22 @@ document.getElementById("startpage").style.display = "none";
 document.getElementById("questionPage").style.display = "block";
 document.getElementById("question").textContent = questions[questionIndex].question;
 
+// get responsive answer buttons
 document.querySelector(".answer-choice").addEventListener("click", function() {
     questionIndex++
     document.getElementById("question").textContent = questions[questionIndex].question;
-    document.getElementById("answer-choice").textContent = questions.options[0];
-    if(answer-choice !== answer) {
-        secondsLeft - 10;
-        alert("Incorrect!");
+    document.querySelector(".answer-choice").textContent = questions.options[0];
+    if(answer-choice === answer) {
+        displayMessage("Correct!")
     } else {
-        alert("Correct!")
+        secondsLeft - 10;
+        displayMessage("Incorrect!");
     }
 });
 
+//store score in local storage
+localStorage.setItem("highScores", JSON.stringify(initials));
+var lastUser = JSON.parse(localStorage.getItem("highScores"));
 
 
 
