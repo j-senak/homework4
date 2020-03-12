@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--Create-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- Start by making the initial html -->
+    <body>
+        <!-- Bootstrap Nav bar that will link to high score page -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="highscorePage">View Highscore</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <h6 class="time"></h6>
+                <div id="main"></div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+              </ul>
+            </div>
+          </nav>
+          <!-- Header with a explanation and Start button below -->
+          <container id= startpage>
+              <h1>Coding Quiz Challenge</h1>
+              <h6>In this coding challenge, you will be given 60 seconds to answer the questions. For each wrong answer, you will be penalized 10 seconds. Your score will be recorded when you are finished. Good luck!</h6>
+              <button type="button" class="btn btn-primary">Start Quiz</button>
+        </container>
+        <div id="questionPage" style="display: none">
+          <header id="question"></header>
+          <button class="answer-choice"></button>
+          <button class="answer-choice"></button>
+          <button class="answer-choice"></button>
+          <button class="answer-choice"></button>
+        </div>
+        <div id="highscorePage" style="display: none">
+            <form id="highs-scores" method="POST">
+              <label for="submitinitials">Add your initials</label>
+              <input type="text" placeholder="Your initials" name="hstext" id="hstext" />
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
